@@ -15,7 +15,7 @@ case $1 in
 		echo "-s or --status:"
 		echo "	get repository status"
 		echo "-p or --pull:"
-		echo "	gull last commits"
+		echo "	pull last commits"
 		echo "-c or --commit:"
 		echo "	ultimate commit"
 	;;

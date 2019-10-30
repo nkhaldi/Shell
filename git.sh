@@ -16,12 +16,16 @@ case $1 in
 		echo "	get repository status"
 		echo "-p | --pull"
 		echo "	pull commits"
+		echo "-l | --log:"
+		echo "	get logs"
 		echo "-a | --add <file>"
 		echo "	add file to git"
 		echo "-r | --remove <file>"
 		echo "	remove file from git"
 		echo "-c | --commit <message>"
 		echo "	commit and push"
+		echo "-ps"
+		echo "	pull & status"
 		echo "-ac <file> <message>"
 		echo "	add & commit & push"
 		echo "-rc <file> <message>"
@@ -33,6 +37,9 @@ case $1 in
 	;;
 	"-p" | "--pull")
 		git pull
+	;;
+	"-l" | "--log")
+		git log
 	;;
 	"-a" | "--add")
 		if [ -z $2 ]; then
@@ -57,6 +64,11 @@ case $1 in
 		fi
 		git push
 		perl -E 'say "\033[32m"'
+		git status
+	;;
+	"-ps")
+		git pull
+		perl -E 'say "\033[36m"'
 		git status
 	;;
 	"-ac")

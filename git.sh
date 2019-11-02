@@ -69,6 +69,7 @@ case $1 in
 	"-ps")
 		perl -E 'say "\033[36m"'
 		git pull
+		perl -E 'say "\033[33m"'
 		git status
 	;;
 	"-ac")

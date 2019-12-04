@@ -12,7 +12,7 @@ case $1 in
 		perl -E 'say "\033[36m"'
 		echo "-h | --help"
 		echo "	get help message"
-		echo "-s | --status:"
+		echo "-s | --status"
 		echo "	get repository status"
 		echo "-p | --pull"
 		echo "	pull commits"
@@ -26,7 +26,7 @@ case $1 in
 		echo "	commit and push"
 		echo "-ps"
 		echo "	pull & status"
-		echo "-ac <file> <message>"
+		echo "-u | ultimate <file> <message>"
 		echo "	add & commit & push"
 		echo "-rc <file> <message>"
 		echo "	rm & commit & push"
@@ -72,7 +72,7 @@ case $1 in
 		perl -E 'say "\033[33m"'
 		git status
 	;;
-	"-ac")
+	"-u" | "--ultimate")
 		if [ -z $2 ]; then
 			git add --all
 			git commit -m "default commit messege"

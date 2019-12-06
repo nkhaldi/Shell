@@ -77,7 +77,7 @@ case $1 in
 		if [ -z $2 ]; then
 			git commit -m "default commit messege"
 		else
-			git commit -m "$3"
+			git commit -m "$2"
 		fi
 		git push
 		perl -E 'say "\033[32m"'

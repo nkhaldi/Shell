@@ -24,8 +24,6 @@ case $1 in
 		echo "	remove file from git"
 		echo "-c | --commit <message>"
 		echo "	commit and push"
-		echo "-ps"
-		echo "	pull & status"
 		echo "-u | ultimate <message>"
 		echo "	add & commit & push"
 	;;
@@ -62,12 +60,6 @@ case $1 in
 		fi
 		git push
 		perl -E 'say "\033[32m"'
-		git status
-	;;
-	"-ps")
-		perl -E 'say "\033[36m"'
-		git pull
-		perl -E 'say "\033[33m"'
 		git status
 	;;
 	"-u" | "--ultimate")

@@ -26,10 +26,8 @@ case $1 in
 		echo "	commit and push"
 		echo "-ps"
 		echo "	pull & status"
-		echo "-u | ultimate <file> <message>"
+		echo "-u | ultimate <message>"
 		echo "	add & commit & push"
-		echo "-rc <file> <message>"
-		echo "	rm & commit & push"
 	;;
 	"-s" | "--status")
 		perl -E 'say "\033[36m"'
@@ -78,22 +76,6 @@ case $1 in
 			git commit -m "default commit messege"
 		else
 			git commit -m "$2"
-		fi
-		git push
-		perl -E 'say "\033[32m"'
-		git status
-	;;
-	"-rc")
-		if [ -z $2 ]; then
-			echo "usage: empty parameter"
-			echo "use: ggit -r <file> <commit>"
-		else
-			git rm $2
-			if [ -z $3 ]; then
-				git commit -m "default commit messege"
-			else
-				git commit -m "$3"
-			fi
 		fi
 		git push
 		perl -E 'say "\033[32m"'

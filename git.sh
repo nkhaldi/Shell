@@ -9,7 +9,7 @@ fi
 
 case $1 in
 	"-h" | "--help")
-		perl -E 'say "\033[36m"'
+		perl -E 'say "\033[34m"'
 		echo "-h | --help"
 		echo "	get help message"
 		echo "-s | --status"
@@ -28,10 +28,11 @@ case $1 in
 		echo "	add & commit & push"
 	;;
 	"-s" | "--status")
-		perl -E 'say "\033[36m"'
+		perl -E 'say "\033[34m"'
 		git status
 	;;
 	"-p" | "--pull")
+		perl -E 'say "\033[34m"'
 		git pull
 	;;
 	"-l" | "--log")

@@ -4,12 +4,13 @@ if [ -z $1 ]; then
 	perl -E 'say "\033[31m"'
 	echo "usage: empty parameter"
 	echo "use -h or --help to get help"
+	perl -e 'print "\033[0m"'
 	exit 0
 fi
 
 case $1 in
 	"-h" | "--help")
-		perl -E 'say "\033[34m"'
+		perl -E 'say "\033[36m"'
 		echo "-h | --help"
 		echo "	get help message"
 		echo "-s | --status"
@@ -28,11 +29,11 @@ case $1 in
 		echo "	add & commit & push"
 	;;
 	"-s" | "--status")
-		perl -E 'say "\033[34m"'
+		perl -E 'say "\033[35m"'
 		git status
 	;;
 	"-p" | "--pull")
-		perl -E 'say "\033[34m"'
+		perl -E 'say "\033[36m"'
 		git pull
 	;;
 	"-l" | "--log")
@@ -80,6 +81,6 @@ case $1 in
 		echo "use -h or --help to get help"
 	;;
 esac
-perl -E 'say "\033[0m"'
 
+perl -E 'say "\033[0m"'
 exit 0

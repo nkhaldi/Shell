@@ -47,8 +47,8 @@ set t_Co=256
 set hlsearch
 set cursorline
 
-" Перед сохранением вырезаем пробелы на концах (только в .py файлах)
-autocmd BufWritePre * normal m`:%s/\s\+$//e ``
+" Перед сохранением вырезаем пробелы на концах
+autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``
 " В .py файлах включаем умные отступы после ключевых слов
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
@@ -70,6 +70,7 @@ set nobackup
 set noswapfile
 set encoding=utf-8
 set fileencodings=utf8,cp1251
+set backspace=indent,eol,start whichwrap+=<,>,[,]
 
 set ruler
 set hidden

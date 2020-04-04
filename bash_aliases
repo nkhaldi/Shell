@@ -16,8 +16,8 @@ alias gcf='gcc -Wall -Werror -Wextra'
 alias py='python3'
 alias py2='python2'
 
-alias gg='~/g_Shell/git.sh'
-alias wifi='~/g_Shell/wifi.sh'
+alias gg='/home/narek/g_Shell/git.sh'
+alias wifi='/home/narek/g_Shell/wifi.sh'
 
 alias sag='sudo apt-get'
 alias sagp='sag purge'

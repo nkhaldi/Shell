@@ -17,8 +17,6 @@ case $1 in
 		echo "	get repository status"
 		echo "-p | --pull"
 		echo "	pull commits"
-		echo "-l | --log:"
-		echo "	get logs"
 		echo "-a | --add <file>"
 		echo "	add file to git"
 		echo "-r | --remove <file>"
@@ -37,9 +35,6 @@ case $1 in
 	"-p" | "--pull")
 		perl -E 'say "\033[36m"'
 		git pull
-	;;
-	"-l" | "--log")
-		git log
 	;;
 	"-a" | "--add")
 		if [ -z $2 ]; then

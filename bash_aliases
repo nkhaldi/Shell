@@ -31,6 +31,7 @@ alias sagar='sag autoremove'
 alias gs='gg -s'
 alias gp='gg -p'
 alias gu='gg -u'
+alias gk='gg -k'
 alias gc='git clone'
 
 alias open='gnome-open'

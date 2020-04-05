@@ -2,7 +2,7 @@
 
 if [ -z $1 ]; then
 	perl -E 'say "\033[31m"'
-	echo "usage: empty parameter"
+	echo "error: empty parameter"
 	echo "use -h or --help to get help"
 	perl -e 'print "\033[0m"'
 	exit 0
@@ -23,6 +23,8 @@ case $1 in
 		echo "	add file to git"
 		echo "-r | --remove <file>"
 		echo "	remove file from git"
+		echo "-k | --checkout <file>"
+		echo "	checkout file"
 		echo "-c | --commit <message>"
 		echo "	commit and push"
 		echo "-u | ultimate <message>"
@@ -48,10 +50,21 @@ case $1 in
 	;;
 	"-r" | "--remove")
 		if [ -z $2 ]; then
-			echo "usage: empty parameter"
-			echo "use: ggit -r <file> <commit>"
+			echo "error: empty parameter"
+			echo "usage: gg -r <file>"
 		else
 			git rm $2
+		fi
+	;;
+	"-k" | "--checkout")
+		if [ -z $2 ]; then
+			perl -E 'say "\033[36m"'
+			echo "error: empty parameter"
+			echo "ussage: gg -k <file>"
+		else
+			git checkout "$2"
+			perl -E 'say "\033[32m"'
+			git status
 		fi
 	;;
 	"-c" | "--commit")
@@ -77,8 +90,8 @@ case $1 in
 	;;
 	*)
 		perl -E 'say "\033[31m"'
-		echo "usage: unknown parameter"
-		echo "use -h or --help to get help"
+		echo "error: unknown parameter"
+		echo "usage -h or --help to get help"
 	;;
 esac
 

@@ -7,6 +7,7 @@ alias lR='l -R'
 alias l1='l -1'
 alias lss='ls *'
 alias laa='la *'
+alias la1='la -1'
 alias lla='ll -A'
 alias laR='la -R'
 

@@ -8,6 +8,7 @@ alias l1='l -1'
 alias lss='ls *'
 alias laa='la *'
 alias la1='la -1'
+alias lR1='lR -1'
 alias lla='ll -A'
 alias laR='la -R'
 
@@ -17,8 +18,8 @@ alias gcf='gcc -Wall -Werror -Wextra'
 alias py='python3'
 alias py2='python2'
 
-alias gg='/home/narek/g_Shell/git.sh'
-alias wifi='/home/narek/g_Shell/wifi.sh'
+alias gg='/home/narek/git/Shell/git.sh'
+alias wifi='/home/narek/git/Shell/wifi.sh'
 
 alias sag='sudo apt-get'
 alias sagp='sag purge'

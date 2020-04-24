@@ -31,7 +31,7 @@ filetype plugin indent on	" required To ignore plugin indent changes, instead us
 
 " Настройки табов
 set tabstop=4
-set noexpandtab
+set expandtab
 set shiftwidth=4
 set softtabstop=4
 set showtabline=1

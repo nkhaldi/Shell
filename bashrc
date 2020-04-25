@@ -110,7 +110,6 @@ if ! shopt -oq posix; then
 fi
 
 eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
-eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
 
 ##
 ## INCLUDE CUSTOM `.bashrc` CODE

@@ -114,6 +114,6 @@ eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
 ##
 ## INCLUDE CUSTOM `.bashrc` CODE
 ##
-if [ -f ~/.bashrc_custom ]; then
+if [ -f /home/narek/.bashrc_custom ]; then
 	. ~/.bashrc_custom
 fi

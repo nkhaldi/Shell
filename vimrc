@@ -29,17 +29,16 @@ filetype plugin indent on	" required To ignore plugin indent changes, instead us
 " :PluginSearch foo	- searches for foo; append `!` to refresh local cache
 " :PluginClean		- confirms removal of unused plugins; append `!` to auto-approve removal
 
-" Настройки табов
-set tabstop=4
+" Табуляция
+set smarttab
 set expandtab
+set autoindent
+set smartindent
+
+set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set showtabline=1
-
-" Автоотступы
-set smarttab
-set autoindent
-set smartindent
 
 " Подсветка
 syntax on

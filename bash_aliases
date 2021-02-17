@@ -10,6 +10,8 @@ alias lla='ls -Al'
 alias lar='ls -AR'
 alias laa='ls -A *'
 alias lls='ls -l *'
+alias lar1='ls - AR1'
+alias llar='ls -lAR'
 
 alias su='sudo su'
 alias py='python3'

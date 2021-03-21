@@ -21,7 +21,6 @@ alias pep='pep8'
 alias pepa='pep8 *.py'
 alias open='xdg-open'
 alias tmex='tmux; exit'
-alias rmysql='mysql -u root -p'
 alias jupyter='jupyter-notebook'
 
 alias sag='sudo apt-get'

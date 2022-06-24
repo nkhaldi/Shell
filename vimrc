@@ -1,5 +1,5 @@
-set nocompatible				" be iMproved, required
-filetype off					" required
+set nocompatible    " be iMproved, required
+filetype off        " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -20,14 +20,14 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'git://git.wincent.com/command-t.git'
 
 " All of your Plugins must be added before the following line
-call vundle#end()			" required
-filetype plugin indent on	" required To ignore plugin indent changes, instead use:
+call vundle#end()           " required
+filetype plugin indent on   " required To ignore plugin indent changes, instead use:
 
 " Brief help
-" :PluginList		- lists configured plugins
-" :PluginInstall	- installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo	- searches for foo; append `!` to refresh local cache
-" :PluginClean		- confirms removal of unused plugins; append `!` to auto-approve removal
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 
 " Табуляция
 set smarttab
@@ -40,20 +40,20 @@ set shiftwidth=4
 set softtabstop=4
 set showtabline=1
 
-" Подсветка
+" Подсветка и прочие параметры
 syntax on
 set t_Co=256
 set hlsearch
 set cursorline
 
-set number					"Включаем нумерацию строк
-set mouse=a					"Включить поддержку мыши
-set mousehide				"Спрятать курсор мыши когда набираем текст
-set termencoding=utf-8		"Кодировка терминала
+set number              " Включаем нумерацию строк
+set mouse=a             " Включить поддержку мыши
+set mousehide           " Спрятать курсор мыши когда набираем текст
+set termencoding=utf-8  " Кодировка терминала
 
-set t_vb=					" Не пищать!
-set novisualbell			" Не мигать
-set visualbell t_vb=		" Выключаем звук в Vim
+set t_vb=               " Не пищать!
+set novisualbell        " Не мигать
+set visualbell t_vb=    " Выключаем звук в Vim
 
 " Переносим на другую строчку, разрываем строки
 set wrap

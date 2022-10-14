@@ -25,4 +25,4 @@ alias gst='git status'
 alias gco='git checkout'
 alias gcm='git commit -m'
 
-alias mysqlun='sudo mysql -u root -p'
+alias mysqlus='sudo mysql -u root -p'

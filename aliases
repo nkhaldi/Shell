@@ -4,6 +4,9 @@ alias la='ls -A'
 alias ll='ls -l'
 alias lr='ls -R'
 
+alias rmf='rm -rf'
+alias tmex='tmux; exit'
+
 alias gad='git add'
 alias glg='git log'
 alias gdf='git diff'
@@ -15,11 +18,7 @@ alias gst='git status'
 alias gco='git checkout'
 alias gcm='git commit -m'
 
-alias rmf='rm -rf'
-alias tmex='tmux; exit'
-
 alias py='python3'
-alias py2='python2'
 alias python='python3'
 alias pep='pycodestyle'
 alias jupyter='jupyter-notebook'

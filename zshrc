@@ -20,7 +20,10 @@ alias egrep='egrep --color=auto'
 alias la='ls -A'
 alias ll='ls -l'
 alias lr='ls -R'
+
 alias rmf='rm -rf'
+alias tmex='tmux; exit'
+alias rezsh='source ~/.zshrc'
 
 alias gad='git add'
 alias glg='git log'

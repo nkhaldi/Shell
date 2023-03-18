@@ -6,6 +6,7 @@ alias lr='ls -R'
 
 alias rmf='rm -rf'
 alias tmex='tmux; exit'
+alias rebash='~/.bashrc'
 
 alias gad='git add'
 alias glg='git log'

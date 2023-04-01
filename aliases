@@ -5,7 +5,9 @@ alias ll='ls -l'
 alias lr='ls -R'
 
 alias rmf='rm -rf'
+alias cls='clear && ls'
 alias tmex='tmux; exit'
+
 alias rebash='~/.bashrc'
 
 alias gad='git add'

@@ -11,17 +11,14 @@
 # - Любая другая команда из одного аргумента или из трех аргументов, но с операцией не из списка.
 #   В этом случае нужно вывести на экран слово "error" и завершить работу.
 
-while true
+while [[ True ]]
 do
-    read -d " " num1
-    if [[ $num1 == "exit" ]]; then; echo "bye"; exit; fi
-    if ! [[ "$num1" =~ ^[0-9]*$ ]]; then; echo "error"; exit; fi
+    read a op b
+    if [[ "$a" != "exit" && -z "$op" ]]; then echo "error"; break; fi
+    if [[ "$a" == "exit" ]]; then echo "bye"; break; fi
 
-    read -d " " op 
-    if [[ $op =~ ^("+" | "-" | "*" | "/" | "**" | "%")$ ]]; then; echo "error"; exit; fi
-
-    read num2
-    let "res = $num1 $op $num2"
-
+    let res="$a $op $b"
     echo $res
 done
+
+exit 0

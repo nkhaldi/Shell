@@ -5,3 +5,5 @@ if [ -z $1 ]; then
 else
     echo $1 | bc;
 fi
+
+exit 0

@@ -10,3 +10,5 @@ echo "Modes for chmod:
     6  rw-
     7  rwx
 "
+
+exit 0

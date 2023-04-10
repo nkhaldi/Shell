@@ -5,3 +5,5 @@ if [ -z $1 ]; then
 else
     echo "Hello, $1!"
 fi
+
+exit 0

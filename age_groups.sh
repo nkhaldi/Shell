@@ -37,3 +37,4 @@ do
 done
 
 echo bye
+exit 0

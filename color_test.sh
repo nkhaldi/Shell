@@ -80,3 +80,5 @@ perl -e 'print "\033[4;38m========  "'
 perl -e 'print "\033[7;38m========  "'
 perl -e 'print "\033[8;38m========  "'
 perl -e 'print "\033[0m\n"'
+
+exit 0

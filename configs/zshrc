@@ -41,6 +41,7 @@ alias pip='pip3'
 alias pep='pycodestyle'
 alias django-run='python3 manage.py runserver'
 alias django-migrate='python3 manage.py makemigrations && python3 manage.py migrate'
+alias clean-pycache='find . -type d -name "__pycache__" -exec rm -r {} +'
 
 alias g++11='g++ -std=c++11'
 alias g++17='g++ -std=c++17'

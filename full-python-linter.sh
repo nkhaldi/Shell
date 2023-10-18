@@ -9,11 +9,11 @@ else
 fi
 
 echo "\033[1;34mUsing isort:\033[0m"
-isort $dir
+isort -l 120 $dir
 echo ""
 
 echo "\033[1;34mUsing black:\033[0m"
-black $dir
+black -l 120 $dir
 echo ""
 
 echo "\033[1;34mUsing flake8:\033[0m"

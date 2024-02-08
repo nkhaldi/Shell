@@ -24,7 +24,7 @@ do
     echo "Enter your age:";
     read age
     [ $age -eq 0 ] && break
-    
+
     if (( $age < 16 )); then
         group=child
     elif (( $age > 30 )); then
@@ -32,7 +32,7 @@ do
     else
         group=youth
     fi
-    
+
     echo "$name, your group is $group"
 done
 

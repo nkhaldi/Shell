@@ -2,13 +2,16 @@ function parse_git_branch() {
     git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
 }
 
+# Prompt
 COLOR_DEF=$'%{\e[0m%}'
 COLOR_USR=$'%{\e[38;5;243m%}'
 COLOR_DIR=$'%{\e[38;5;197m%}'
 COLOR_GIT=$'%{\e[38;5;39m%}'
 setopt PROMPT_SUBST
-export PROMPT='${COLOR_USR}%n ${COLOR_DIR}%~ ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF}$ '
+export PROMPT='${COLOR_USR}%n ${COLOR_DIR}%~ ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF}
+$ '
 
+# Coloring
 alias ls='ls --color'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
@@ -17,12 +20,14 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+# ls
 alias la='ls -A'
 alias ll='ls -l'
 alias lr='ls -R'
 alias rmf='rm -rf'
 alias cls='clear && ls'
 
+# Git
 alias gad='git add'
 alias glg='git log'
 alias gdf='git diff'
@@ -35,14 +40,20 @@ alias gst='git status'
 alias gco='git checkout'
 alias gcm='git commit -m'
 
+# Python
 alias py='python3'
 alias python='python3'
 alias pip='pip3'
 alias pep='pycodestyle'
-alias pylinter='sh ~/Code/Shell/full-python-linter.sh'
 alias django-run='python3 manage.py runserver'
 alias django-migrate='python3 manage.py makemigrations && python3 manage.py migrate'
 alias clean-pycache='find . -type d -name "__pycache__" -exec rm -r {} +'
+alias pylinter='sh ~/Code/Shell/full-python-linter.sh'
 
-alias g++11='g++ -std=c++11'
-alias g++17='g++ -std=c++17'
+# G++ compiler
+alias g11='g++ -std=c++11'
+alias g17='g++ -std=c++17'
+
+# Docker
+alias dc-up='docker compose up'
+alias dc-build='docker compose build'

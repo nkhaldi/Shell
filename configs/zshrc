@@ -50,10 +50,12 @@ alias django-migrate='python3 manage.py makemigrations && python3 manage.py migr
 alias clean-pycache='find . -type d -name "__pycache__" -exec rm -r {} +'
 alias pylinter='sh ~/Code/Shell/full-python-linter.sh'
 
-# G++ compiler
-alias g11='g++ -std=c++11'
-alias g17='g++ -std=c++17'
+# G++ compiler 
+alias gpp11='g++ -std=c++11'
+alias gpp17='g++ -std=c++17'
 
 # Docker
+alias dc='docker compose'
 alias dc-up='docker compose up'
+alias dc-run='docker compose run'
 alias dc-build='docker compose build'

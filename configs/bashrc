@@ -79,5 +79,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"

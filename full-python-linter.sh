@@ -17,7 +17,7 @@ black --line-length=120 $dir
 echo ""
 
 echo "\033[1;34mUsing flake8:\033[0m"
-flake8 $dir
+flake8 --max-line-length=120 $dir
 echo ""
 
 echo "\033[1;32mDone.\033[0m"

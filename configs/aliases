@@ -2,6 +2,7 @@
 
 # General
 alias la='ls -A'
+alias lo='ls -o'
 alias ll='ls -l'
 alias lr='ls -R'
 
